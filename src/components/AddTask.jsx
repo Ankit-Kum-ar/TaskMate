@@ -33,7 +33,7 @@ const AddTask = ({taskList, setTaskList, task, setTask}) => {
     <div className='w-5/12 flex rounded-md border-2 mt-[7%] left-0 mx-auto shadow'>
         <form action="" className='my-4 mx-5 w-11/12' onSubmit={(e) => e.preventDefault()}>
             <input type="text" placeholder='add task' value={task.task || ''} className='p-2 w-10/12 mr-2 rounded-lg border-2 focus:outline-none placeholder-slate-500' ref={inputText} onChange={e => setTask({...task, task:e.target.value})} />    
-            <button className='bg-green-500 text-white p-2 rounded-md font-medium px-5' onClick={handleButton}>
+            <button className='bg-green-500 text-white p-2 rounded-md font-medium px-5 hover:bg-green-600' onClick={handleButton}>
                 {task.id ? 'Update' : 'Add'}
             </button>  
         </form>

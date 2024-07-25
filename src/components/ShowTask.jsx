@@ -11,7 +11,7 @@ const ShowTask = ({taskList, setTaskList, task, setTask}) => {
             <span className='ml-2 rounded-full font-normal bg-slate-300 px-2 py-1 text-sm'>
                 {taskList.length}
             </span>
-            <button className='bg-blue-600 ml-1 text-white px-2 py-1 font-medium rounded-md' onClick={handleClearAll}>
+            <button className='bg-blue-600 ml-1 text-white px-2 py-1 font-medium rounded-md hover:bg-blue-800' onClick={handleClearAll}>
                 Clear All
             </button>
         </p>      
