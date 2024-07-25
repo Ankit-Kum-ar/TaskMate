@@ -30,10 +30,10 @@ const AddTask = ({taskList, setTaskList, task, setTask}) => {
     }
 
   return (
-    <div className='w-5/12 flex rounded-md border-2 mt-[7%] left-0 mx-auto shadow'>
-        <form action="" className='my-4 mx-5 w-11/12' onSubmit={(e) => e.preventDefault()}>
-            <input type="text" placeholder='add task' value={task.task || ''} className='p-2 w-10/12 mr-2 rounded-lg border-2 focus:outline-none placeholder-slate-500' ref={inputText} onChange={e => setTask({...task, task:e.target.value})} />    
-            <button className='bg-green-500 text-white p-2 rounded-md font-medium px-5 hover:bg-green-600' onClick={handleButton}>
+    <div className='md:w-5/12 w-7/12 flex rounded-md border-2 mt-[7%] left-0 mx-auto shadow'>
+        <form action="" className='my-4 md:mx-5 mx-3 w-11/12' onSubmit={(e) => e.preventDefault()}>
+            <input type="text" placeholder='add task' value={task.task || ''} className='md:p-2 p-1 md:w-9/12 w-full md:mr-2 mr-2 rounded-lg md:text-base text-sm border-2 focus:outline-none placeholder-slate-500' ref={inputText} onChange={e => setTask({...task, task:e.target.value})} />    
+            <button className='bg-green-500 text-white md:p-2 py-1 md:mt-0 mt-4 md:mx-0 mx-[30%] rounded-md font-medium md:px-5 px-3 hover:bg-green-600' onClick={handleButton}>
                 {task.id ? 'Update' : 'Add'}
             </button>  
         </form>
